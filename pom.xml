@@ -135,16 +135,16 @@
             <executions>
                 <execution>
                     <phase>package</phase>
-                    <goals>
-                        <goal>integration-test</goal>
-                        <goal>verify</goal>
-                    </goals>
+<!--                    <goals>-->
+<!--                        <goal>integration-test</goal>-->
+<!--                        <goal>verify</goal>-->
+<!--                    </goals>-->
                 </execution>
             </executions>
             <configuration>
-                <includes>
-                    <include>test.java.academy.dd.fibonacci</include>
-                </includes>
+<!--                <includes>-->
+<!--                    <include>test.java.academy.dd.fibonacci</include>-->
+<!--                </includes>-->
                 <mainClass>test.java.academy.dd.fibonacci.fibonaccitests</mainClass>
 <!--                <arguments>-->
 <!--                    <argument>foo</argument>-->
