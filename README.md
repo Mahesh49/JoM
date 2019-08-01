@@ -12,3 +12,8 @@ There are no automated checks for this application.  Treating the application as
 
 # To submit your test
 Either fork this repo and share the link, or submit commits to a branch.
+
+# To run 
+
+mvn test 
+mvn -Dtest=fibonaccitests test
