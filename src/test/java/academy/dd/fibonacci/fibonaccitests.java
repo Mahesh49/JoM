@@ -100,4 +100,34 @@ public class fibonaccitests {
                 .assertThat()
                 .body(equalTo("[\"5\",\"-3\",\"2\",\"-1\",\"1\",\"0\",\"1\",\"1\",\"2\",\"3\"]"));
     }
+
+//    @Test
+//    public void fibobacci_index_max() {
+//        for(int i=0;i>=0;i++) {
+//            given().when().get(Integer.toString(i)).then()
+//                    .statusCode(200);
+//        }
+//    }
+
+    @Test
+    public void validateCorrectSequence() {
+        for(int i=0;i<=50;i++) {
+            given().when().get(Integer.toString(i)).then()
+                    .statusCode(200)
+                    .assertThat()
+                    .body(equalTo(Integer.toString(fib(i))));
+        }
+    }
+
+    private int fib(int n) {
+        int a = 0, b = 1, c;
+        if (n == 0)
+            return a;
+        for (int i = 2; i <= n; i++) {
+            c = a + b;
+            a = b;
+            b = c;
+        }
+        return b;
+    }
 }
